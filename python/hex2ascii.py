@@ -38,6 +38,9 @@ for line in hex_data:
     if hexadecimal in ascii_table:
         character: str = ascii_table[hexadecimal]
 
+        if character == "LF":
+            character = "\n"
+        
         if character == "SPACE":
             character = " "
 
